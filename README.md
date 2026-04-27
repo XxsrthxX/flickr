@@ -1,16 +1,87 @@
-# React + Vite
+# 🎬 Flickr — Find Your Next Favourite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic movie and TV show discovery app built with React, powered by the OMDb API.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [flickr-blush.vercel.app](https://flickr-blush.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Search millions of movies and TV shows by title
+- 🎞️ Auto-sliding hero with famous movie backdrops
+- 📄 Full detail pages with ratings, cast, plot and genres
+- 🔖 Save titles to a personal Watchlist (persisted with localStorage)
+- ⏳ Loading skeleton cards for smooth async UX
+- 📱 Fully responsive with a mobile hamburger menu
+- ♾️ Paginated search results with "Load More"
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Frontend | React 18 |
+| Routing | React Router v6 |
+| Styling | Tailwind CSS v3 |
+| HTTP | Axios |
+| API | OMDb API |
+| Deployment | Vercel |
+
+---
+
+## Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/XxsrthxX/flickr.git
+cd flickr
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Add your OMDb API key
+Create a `.env` file in the root:
+VITE_OMDB_API_KEY=your_key_here
+
+Get a free key at [omdbapi.com](https://omdbapi.com)
+
+### 4. Run the dev server
+```bash
+npm run dev
+```
+
+---
+
+## Project Structure
+
+src/
+├── api/           # OMDb API calls
+├── components/    # Navbar, MovieCard, SkeletonCard
+├── hooks/         # useWatchlist, useSearch
+└── pages/         # Home, Search, Detail, Watchlist
+
+
+---
+
+## What I Learned
+
+- Fetching and handling async data from a REST API in React
+- Managing loading, error, and empty states for a polished UX
+- Building reusable components and custom hooks
+- Persisting state with localStorage
+- Deploying a React app to Vercel with environment variables
+
+---
+
+## Author
+
+**XxsrthxX** — [GitHub](https://github.com/XxsrthxX)
+
+---
+
+_Built as part of my junior web developer portfolio_
