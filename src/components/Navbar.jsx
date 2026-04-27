@@ -19,9 +19,14 @@ function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-amber-400 tracking-tight">
-          Flickr
-        </Link>
+              <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-amber-400 tracking-tight">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="8" fill="#F59E0B"/>
+          <polygon points="11,8 22,14 11,20" fill="#0A0A0A"/>
+          <rect x="6" y="8" width="3" height="12" rx="1.5" fill="#0A0A0A"/>
+        </svg>
+        Flickr
+      </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
